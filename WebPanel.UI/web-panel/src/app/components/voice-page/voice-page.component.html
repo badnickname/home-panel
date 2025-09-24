@@ -1,0 +1,16 @@
+<div class="pt-4">
+  <h1 class="h-block">Распознование речи</h1>
+  <p class="text-light pb-2">Может потребовать дополнительные ресурсы системы</p>
+  <p class="text-light pb-2">Понимает следующие команды:</p>
+  <ul class="list-disc list-inside pb-2">
+    <li>ок, громче</li>
+    <li>ок, тише</li>
+    <li>ок, выключи</li>
+    <li>ок, отмени выключение</li>
+  </ul>
+  <div>
+    <mat-slide-toggle class="text-light" [checked]="enabled()" (change)="setEnabled($event)">
+      <span class="text-light">Включить</span>
+    </mat-slide-toggle>
+  </div>
+</div>

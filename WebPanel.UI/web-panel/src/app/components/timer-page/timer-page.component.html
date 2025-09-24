@@ -1,0 +1,14 @@
+<div class="pt-4">
+  <h1 class="h-block">Таймер сна</h1>
+  <div>
+    <mat-form-field class="example-form-field">
+      <input matInput type="number" [value]="timer()" (change)="setTimer($event)" />
+    </mat-form-field>
+  </div>
+  <div class="flex flex-wrap w-56 gap-3">
+    <button mat-stroked-button (click)="setHour(1)">1ч</button>
+    <button mat-stroked-button (click)="setHour(2)">2ч</button>
+    <button mat-stroked-button (click)="setHour(3)">3ч</button>
+    <button class="w-full" mat-stroked-button (click)="setHour(0)">Сбросить</button>
+  </div>
+</div>

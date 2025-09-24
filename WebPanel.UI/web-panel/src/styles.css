@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss';
+
+@theme {
+  --color-darkest: var(--mat-sys-background);
+  --color-dark: var(--mat-sys-surface-container-highest);
+  --color-light: var(--mat-sys-on-surface);
+  --color-accent: var(--mat-sys-primary);
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.hr-block {
+  @apply mb-5 mt-5 h-px bg-dark border-0;
+}
+
+.h-block {
+  @apply text-light text-3xl font-bold mb-4;
+}
